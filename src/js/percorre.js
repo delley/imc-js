@@ -1,6 +1,6 @@
-function percorreArray(trsPacientes, comportamento) {
-  for (var posicaoAtual = 0; posicaoAtual < trsPacientes.length; posicaoAtual++) {
-    var pacienteTrAtual = trsPacientes[posicaoAtual];
-    comportamento(pacienteTrAtual);
+function percorreArray(elementos, comportamento) {
+  for (var posicaoAtual = 0; posicaoAtual < elementos.length; posicaoAtual++) {
+    var elemento = elementos[posicaoAtual];
+    comportamento(elemento);
   }
 }

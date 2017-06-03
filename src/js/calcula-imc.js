@@ -1,4 +1,7 @@
-function calcularTodosIMCs() {
+var botao = document.getElementById('calcula-imcs');
+//botao.onclick = calcularTodosIMCs; <-- outra forma de associar uma função a um evento click
+
+botao.addEventListener('click', function calcularTodosIMCs() {
   var trsPacientes = document.getElementsByClassName('paciente');
 
   percorreArray(trsPacientes, function (pacienteTr) {
@@ -13,7 +16,4 @@ function calcularTodosIMCs() {
     console.log(imc);
   });
 
-}
-
-var botao = document.getElementById('calcula-imcs');
-botao.onclick = calcularTodosIMCs;
+});
